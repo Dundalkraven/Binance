@@ -1,1 +1,16 @@
+numpy>=1.26.*  # version might be limited by numba and tensorflow
+pandas>=2.*  # version might be important for parsing timestamps
+numba  # For highlow label generator. numba 0.57.1 requires numpy<1.25,>=1.21,
+quandl  # as additional source
 
+
+# Downloaders
+python-binance>=1.0.*  # pip install python-binance
+
+# Features/label generation
+ Libs fom CoinGecko
+
+# Algorithms
+scikit-learn==1.5.*
+R  for analysis
+# seaborn  # if diagrams are turned on
