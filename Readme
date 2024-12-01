@@ -1,0 +1,68 @@
+Binance-Bot
+
+A fully automated cryptocurrency trading bot for Binance exchange.
+
+Overview
+The Binance-Bot is an automated trading bot designed to execute trades on the Binance cryptocurrency exchange. Using advanced trading strategies and market data analysis, the bot simplifies and automates crypto trading, providing users with efficient and profitable trading operations.
+Features
+Real-Time Market Analysis: Monitors live market data and calculates the best trading opportunities.
+Customizable Trading Strategies: Support for strategies like scalping, grid trading, or RSI-based decisions.
+Risk Management: Implements stop-loss and take-profit mechanisms to protect investments.
+Backtesting Module: Test trading strategies on historical data to optimize performance.
+API Integration: Seamlessly connects with Binance using API keys for trading operations.
+Logging and Reporting: Detailed trade logs and performance analytics for transparency.
+
+Requirements
+Python: Version 3.8 or higher
+Binance API Key:
+CoinGecko API:
+Libraries: Install dependencies using the requirements.txt file
+
+Project Structure
+binance-bot/
+├── bot.py             # Main script to run the bot
+├── strategies/        # Custom trading strategy implementations
+├── config.json        # Configuration file for user-defined settings
+├── logs/              # Directory for trade logs and reports
+├── requirements.txt   # List of required Python libraries
+├── README.md          # Project documentation
+└── .env               # Environment variables for API keys
+
+Bot Schema
+
+date : primary key
+coin_id: Unique identifier for each coin.
+coin_name: Name of the cryptocurrency.
+opening_price: Opening price for the day.
+closing_price: Closing price for the day.
+daily_return: Percentage change between opening and closing prices.  SEE FORMULA IN PICTURE
+volatility: Absolute difference between closing and opening prices SEE FORMULA IN PICTURE
+cumulative_return: Cumulative return since the listing date.  SEE FORMULA IN PICTURE
+days_since_listing: Days elapsed since the listing date.
+average_daily_return: Average return calculated for each coin.
+average_volatility: Average volatility calculated for each coin.
+market_trend: Include BTC/ETH daily return for benchmarking.
+
+Statistical and Financial Modeling:
+ Correlation analysis 
+ A/B testing
+ Linear Regression
+
+
+Disclaimer
+Binance Bot involves significant risk. Use this bot at your own discretion.
+The authors are not responsible for any financial losses incurred while using this bot.
+
+Project team:
+rachid.hamili@gmail.com
+gordon.philipp@gmail.com
+rachid.hamili@gmail.com
+julian.weitz@gmx.net
+alexis.ducros.pro@gmail.com 
+
+Preject data sets and references:
+https://docs.coingecko.com/reference/coins-markets
+https://coinmarketcap.com/
+https://finnhub.io/
+https://www.kaggle.com/datasets/sudalairajkumar/cryptocurrencypricehistory
+https://www.binance.com/en/support/announcement/
