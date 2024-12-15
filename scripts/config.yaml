@@ -1,0 +1,11 @@
+
+TRADE_OPTIONS:
+  TP: 1.0
+  SL: 0.5
+  ENABLE_TSL: False
+  TSL: 0.5
+  PAIRING: "USDT"
+  QUANTITY: 10
+  RUN_EVERY: 5
+  TEST: True
+  LEVERAGE: 1
